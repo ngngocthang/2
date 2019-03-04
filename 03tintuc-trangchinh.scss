@@ -1,0 +1,180 @@
+.content{
+	.tieude{
+		display: flex;
+		border-bottom:1px solid $mauborder;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		h3{
+			width: 70%;
+			font-size: 26px;
+			font-family: 'RB';
+			color: $mauxanh;
+			position: relative;
+			&:before{
+				content: "";
+			    display: block;
+			    width: 100px;
+			    height: 3px;
+			    background: #007cbc;
+			    position: absolute;
+			    top: 48px;
+			    left: 0;
+			}
+		}
+		a{
+			width: 30%;
+			display: flex;
+			justify-content: flex-end;
+			color: #999;
+			text-decoration: none;
+			align-items: center;
+			i{
+				margin-left: 5px;
+			}
+		}
+	}
+	.tintuc-sp{
+		margin-bottom: 50px;
+	}
+	.tinchinh{
+		.imgcw{
+			margin-bottom: 20px;
+			&:before{padding-bottom: 62%}
+		}
+	}
+	.tinphu{
+		.tinphu-item{
+			margin-bottom: 20px;
+			display: flex;
+			.imgcw{
+				width: 40%;
+				&:before{padding-bottom: 62%}
+			}
+			.desc{width: calc(60% - 15px);
+				margin-left: 15px;
+			}
+		}
+	}
+	.desc{
+		position: relative;
+			.lich{
+				text-align: center;
+				color: #fff;
+				background: #2285b7;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateY(-100%);
+				z-index: 1;
+				padding: 5px 10px;
+				.year{
+					border-bottom:1px solid $mauborder;
+				}
+				span{font-size: 15px;font-family: 'RBr'}
+			}
+			a{
+				text-decoration: none;
+				color: #333;
+				font-size: 18px;
+				font-family: 'RB';				
+				&:hover{
+					color:$mauxanh;
+				}
+			}
+			p{
+				margin-top: 10px;
+				color: #333;
+				font-size: 16px;
+				font-family: 'RBr';
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    line-height: 25px;
+			    -webkit-line-clamp: 3;
+			    height: 75px;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			}
+		}
+	.tincongty{
+		margin-bottom: 50px;
+		.item{
+			.imgcw{
+				&:before{padding-bottom: 66%;}
+			}
+			.desc{
+				padding-bottom: 20px;
+				padding-left: 15px;
+				padding-right: 15px;
+				background:#ebebeb;
+			}
+			.wrap-nut{text-align: center;}
+				a.title{
+				text-decoration: none;
+				font-size: 18px;
+				font-family: 'RB';
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color: #333;
+				display: inline-block;
+				}
+				a.nut-chitiet{
+					display: inline-block;
+					background: $mauxanh;
+					color: #fff;
+					padding: 12px 37px;
+					text-align: center;
+					text-decoration: none;
+					border-radius:999px;
+				}
+			p{font-size: 16px;
+				font-family: 'RBr';}
+		}
+	}
+}
+.date-views{
+	color: #999;
+	font-size: 14px;
+	margin-top:10px;
+	span{
+		margin-right: 15px;
+		i{margin-right: 5px;}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

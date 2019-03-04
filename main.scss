@@ -1,10 +1,174 @@
-﻿
-@import "font-face";
+﻿@import "font-face";
 @import "image";
+
+@import "01gioithieu";
+@import "02gioithieu-chitiet";
+@import "03tintuc-trangchinh";
+@import "04tintuc-danhsach";
+@import "05tintuc-chitiet";
+@import "06lienhe";
+@import "07guilienhethanhcong";
+@import "08congtrinh";
 
 $mauxanh:#007cbc;
 $mauborder:#e1e1e1;
 
+//tool tang giam co chu
+.commonHeadTool {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: solid 1px #eaeaea;
+        overflow-x: hidden;
+        margin-bottom: 20px;
+        .date {        
+            flex: 0 0 50%;
+            max-width: 50%;       
+            font-size: 14px;
+            color: #999999;
+            i{
+                margin-right: 5px;
+            }
+           
+        }
+
+        .right {        
+            flex: 0 0 50%;
+            max-width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            .changeSize{
+                margin-right: 5px;
+                margin-bottom: 3px;
+            }
+            .NormalSize {
+                margin-right: 10px;
+                color: #999;
+                text-decoration: none;
+                transform: translateY(2px);
+                font-size: 12px;
+            }
+
+            .SmallSize, .LargeSize {
+                width: 21px;
+                height: 21px;
+                display: inline-block;
+                margin-right: -2px;
+                font-size: 12px;
+                i {
+                    width: 100%;
+                    height: 100%;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #999999;
+                    background: #e8e8e8;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+//tool gui mail plugin mxh
+ #tool-footer-post-detail {
+        border-top: solid 1px #eeeeee;
+        border-bottom: solid 1px #eeeeee;
+        padding: 2px 0;
+        display: flex !important;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        .tool-left {
+            width: 50%;
+            a {
+                text-decoration: none;
+                display: inline-block;
+                margin-right: 25px;
+                display: inline-block;
+                transition: 0.3s;
+                color: #999999;
+                font-size: 14px;
+                &:hover {
+                    
+                    i{
+                       
+                    }
+                }
+
+                i {
+                    margin-right: 3px;
+                    color: #999999;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .tool-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .social{
+                margin-top: -2px;
+            }
+            .addthis_toolbox {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+                margin-top: 5px;
+                .shareItem {
+                    height: 20px;
+                    color: #999999;
+                }
+
+                .fb_iframe_widget {
+                    margin-top: -2px;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+ //khoi date-view dung chung 
+ .date-view{
+                         color:#999;
+                         margin-top:10px;
+                         span{
+                             font-size:13px;
+                             border-right:1px solid #999;
+                             padding-right:10px;
+                             margin-right:10px;
+                             &:last-child{
+                                 border-right:none;
+                             }
+                             i{margin-right:5px;}
+                         }
+                     }
+// phan trang dung chung 
+.paging.SplitPages{
+    text-align: center;
+}
+.paging.SplitPages a {
+            color: #808184;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 17px;
+            font-size: 14px;
+            border: 1px solid #e1e1e1;
+            margin-right: 5px;
+            &:hover{
+                background:$mauxanh;
+                color:#fff;
+            }
+            i{
+                font-weight:bold
+            }
+        }
+ // class dung chung
+
+.mg-t-0{
+    margin-top:0!important;
+}
+.mg-b-20{
+    margin-bottom:20px!important;
+}
 .mg-b-30{
     margin-bottom:30px!important;
 }
@@ -60,10 +224,10 @@ body{
     overflow-x: hidden;
 }
 .container{
-    max-width:1195px;
+    max-width:1165px;
     margin-left: auto;
     margin-right: auto;
-
+    padding:0
 }
         //phan top header
 .topHeader{
@@ -125,7 +289,7 @@ body{
         z-index:1;
         .logo{
             img{
-                width: 384px;
+                width: 100%;
             }
         }
         .form-search{
@@ -171,38 +335,22 @@ body{
         }
     }
     }
-    .nav{
-        background: $mauxanh;
-        height:45px;
-        position:relative;
-        ul.menu{
-                height: 45px;
-                display: flex;
-                line-height: 45px;
-                list-style: none;
-                padding-left: 0;
-                margin-bottom: 0;
-            li{
-
-                a{
-                padding: 13px 13px;
-                color: #fff;
-                text-transform: uppercase;
-                text-decoration: none;
-                }
-            }
-        }
-    }
+   
 }
-
+.header .nav ul.menu li.dropdown:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
     // phan banner
 .banner{
+    position:relative;
+    z-index:-1;
     .banner-wrap{
         .imgcw:before{padding-bottom:27%;}
     }
     .banner-slide__wrap{
         position:relative;
-        top:-77px;
+        top:-50px;
         z-index:1;
         
     }
@@ -269,7 +417,7 @@ body{
     height: 40px;
     background: gray;
     position: absolute;
-    top: 57px;
+    top: 30px;
     left: auto;
     right: -60px;
     &:before{
@@ -283,7 +431,7 @@ body{
     height: 40px;
     background: gray;
     position: absolute;
-    top: 57px;
+    top: 30px;
     left:-51px;
     &:before{
         content: "\f104";
@@ -414,7 +562,7 @@ body{
                 z-index: 1;
                 border-right: 1px solid #e1e1e1;
                 .item{
-                    min-height: 361px;
+                    height: 361px;
                     text-align:center;
                     border: 1px solid #e1e1e1;
                     border-left: 0;
@@ -1083,7 +1231,7 @@ footer{
                 position: absolute;
                 top: -21px;
                 left: auto;
-                right: 16px;
+                right: 26px;
                 &:before{
                     content: "\f105";
                     font-family: FontAwesome;
@@ -1109,45 +1257,173 @@ footer{
         }
     }
 }
+.mains .__1khoi .sanpham .list button.slick-next.slick-arrow{
+    right:10px;
+}
+ .navs{
+        background: $mauxanh;
+        height:45px;
+        position:relative;
+        
+    }
+#x-resMenu>nav>ul>li>a{
+        padding: 13px 20px;
+        font-size:15px;
+        text-transform:uppercase;
+        color:#fff;
+}
+#x-resMenu>nav>ul>li>a:hover{
+       background:#1a89c3;
+       color:#fff;
+}
+#x-resMenu>nav.visible {
+    position: absolute;
+    overflow: unset;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    top: 45px;
+}
+.mains .__1khoi .sanpham .list .item{
+    height:361px!important;
+}
 
+@media (max-width: 1365px) {
+    .khoiThongTinPhu{
+        display:none;
+    }
+    .header .header-top .header-wrap .logo img{
+        width:246px;
+    }
+    .topHeader .topHeader-wrap .topHeader-l a:last-child{
+        display:none;
+    }
+    .header .header-top .header-wrap .form-search input {
+    width:auto;
+}
+    .banner button.slick-prev.slick-arrow{
+        left:0;
+        z-index:1;
+    }
+    .banner button.slick-next.slick-arrow{
+        right:0;
+        z-index:1;
+    }
+    .wrap-copyright{
+        flex-direction:column;
+        line-height:30px!important;
+    }
+    .copyright .right {
+    width: 100%;
+    }
+   .mains .__1khoi .sanpham .list .item .imgcw:before {
+    padding-bottom: 76%;
+    }
+   #x-resMenu > nav > ul > li > a {
+    color: #333;
+    font-weight: bold; }
+  #x-resMenu > .toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px; }
+    #x-resMenu > .toggle span {
+      background: #fff; }
+      #x-resMenu > .toggle span:after {
+        background: #fff; }
+      #x-resMenu > .toggle span:before {
+        background: #fff; } 
+      .mains .__1khoi .sanpham .list button.slick-next.slick-arrow{
+          right:10px;
+      }
+        .mains .__1khoi .sanpham .list .item .imgcw:before {
+    padding-bottom: 54%;
+  }
+
+
+}
 //responsive cho man hinhh dien thoai
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   * {
     padding: 0; }
 
-.main .main-item .main-item__product {
-    border: 1px solid #e1e1e1;
-}
-
-.main .main-item .main-item__product .main-item__product--type p {}
-
-.main .main-item .main-item__product .main-item__product--type {
+.copyright .mail {
     display: none;
 }
 
-.main .main-item .main-item__cap span {
+.copyright .left {
+    width: 100%;
+}
+
+.copyright .right {
+    width: 100%;
+}
+
+.copyright .wrap-copyright {
+    flex-direction: column;
+    line-height: unset;
+}
+
+.mains .__1khoi .main-item__cap span {
     display: none;
 }
 
-.main .main-item .main-item__cap span.caption {
+.mains .__1khoi .sanpham .list {
+    width: 100%;
+}
+
+.mains .__1khoi .sanpham .loaisp {
+    display: none;
+}
+  .header .nav ul.menu li a {
+    color: #fff; }
+  .menu li:hover {
+    background: #007cbc;
+    color: #fff; }
+  .menu li:hover a {
+    color: #fff; }
+  .header .nav ul.menu li a {
+    color: #333;
+    width: 100%;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0;
+    background: #e1f5ff;
+    padding-left: 20px; }
+  .header .nav ul.menu li a:hover {
+    background: #007cbc;
+    color: white; }
+  .header .nav ul.menu li a:after {
+    content: "\f107";
+    right: 25px;
+    top: 0;
+    font-family: FontAwesome;
+    position: absolute; }
+  .main .main-item .main-item__product {
+    border: 1px solid #e1e1e1; }
+  .main .main-item .main-item__product .main-item__product--type {
+    display: none; }
+  .main .main-item .main-item__cap span {
+    display: none; }
+  .main .main-item .main-item__cap span.caption {
     padding-left: 0;
-    width: 50%;
-}
-
-.main .main-item .main-item__cap span.caption:before {
+    width: 50%; }
+  .main .main-item .main-item__cap span.caption:before {
     display: none;
-    /* padding-left: 0; */
-}
+    /* padding-left: 0; */ }
   .menu li {
+    width: 100%;
     height: 45px;
-    background: lightblue;
-    border-bottom: 0px solid lightblue; }
+    /* background: #e1f5ff; */
+    border-bottom: 1px solid #e1e1e1;
+    position: relative; }
   .header .nav ul.menu {
     flex-direction: column;
     position: absolute;
     z-index: 999;
     top: 45px;
-    left: 0; }
+    left: 0;
+    width: 100%; }
   .market {
     position: absolute;
     bottom: -75px;
@@ -1168,4 +1444,59 @@ footer{
   .topHeader-l a {
     display: none; }
   .topHeader-l a:first-child {
-    display: block; } }
+    display: block; }
+  .header .nav ul.menu li.dropdown ul {
+    width: 100%;
+    position: static; }
+  #x-resMenu > nav > ul > li > a {
+    color: #333;
+    font-weight: bold; }
+  #x-resMenu > .toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px; }
+    #x-resMenu > .toggle span {
+      background: #fff; }
+      #x-resMenu > .toggle span:after {
+        background: #fff; }
+      #x-resMenu > .toggle span:before {
+        background: #fff; } 
+      .mains .__1khoi .sanpham .list .item {
+    border-left: 1px solid #e1e1e1;
+}
+      .banner .banner-wrap .imgcw:before {
+    padding-bottom: 70%;
+}
+      .mains .__1khoi .main-item__cap span.caption{
+          padding-left:0;
+      }
+      .mains .__1khoi .main-item__cap span.caption:before {
+    content: "";
+    display: none;
+}
+      .mains .__1khoi .main-item__cap span.caption{
+          width:50%!important;
+          min-width:100px;
+      }
+      footer .item p.caption {
+    margin-top: 30px;
+}
+      .information .khoiThongTin{
+          flex-direction:column;
+      }
+      .information .khoiThongTin .khoiThongTinPhu{
+          padding-left:0!important;
+      }
+      .copyright{
+          padding:10px 0;
+      }
+      .wrap-copyright{
+          flex-direction:column;
+          line-height:none;
+      }
+}
+
+
+
+

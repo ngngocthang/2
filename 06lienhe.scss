@@ -1,0 +1,77 @@
+
+.content{
+	
+	.wrap-lienhe{
+		margin-bottom: 60px;
+				p{
+			color: #333;
+			font-size: 15px;
+			font-family: 'RBr';
+			i{
+				color: #999;
+				margin-right: 10px;
+			}
+		}	
+		h3{font-size: 16px;
+			color: $mauxanh;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			font-family: 'RB';
+		}	
+	}
+	.guiyeucau{
+
+		margin-bottom: 60px;
+
+			input{
+				width: 100%;
+				height: 40px;
+				display: block;
+				margin-bottom: 10px;
+				padding-left: 10px;
+				color: #333;
+				border:1px solid $mauborder;
+				&::placeholder {
+				color: #333;
+			}
+			}
+			textarea{
+				width: 100%;
+				height: 100px;
+				display: block;
+				margin-bottom: 10px;
+				color: #333;
+				padding-left: 10px;
+				border:1px solid $mauborder;
+				&::placeholder {
+				color: #333;
+			}
+			}
+			a{
+				display: inline-block;
+				padding:10px 70px;
+				background:#b2b2b5;
+				color: #fff;
+				text-decoration: none;
+				border-radius:999px;
+				margin-right: 15px;
+				&:hover{
+					background:$mauxanh;
+				}
+			}
+			h3{font-size: 16px;
+			color: $mauxanh;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			font-family: 'RB';
+		}	
+	}
+	.google-maps{
+		h3{font-size: 16px;
+			color: $mauxanh;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			font-family: 'RB';
+		}	
+	}
+}
