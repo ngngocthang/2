@@ -1,17 +1,116 @@
 ﻿@import "font-face";
 @import "image";
+@import "x-resmenu";
+@import "config";
 
 @import "01gioithieu";
 @import "02gioithieu-chitiet";
 @import "03tintuc-trangchinh";
 @import "04tintuc-danhsach";
-@import "05tintuc-chitiet";
+
 @import "06lienhe";
 @import "07guilienhethanhcong";
 @import "08congtrinh";
+@import "09-congtrinh-chitiet";
+@import "10-sanpham-trangchinh";
+@import "11-sanpham-chitiet-tongquansanpham";
 
 $mauxanh:#007cbc;
 $mauborder:#e1e1e1;
+    %h3-gachchan{
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-family: 'RB';
+        color: #007cbc;
+        position: relative;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 18px;
+        margin-bottom: 40px;
+        }
+    %h3-gachchan_before{
+                content: "";
+                display: block;
+                width: 100px;
+                height: 3px;
+                background: #007cbc;
+                position: absolute;
+                top: 48px;
+                left: 0;
+    }
+
+.header-nav {
+    height: 44px;
+    background: $mauxanh;
+    width: 100%;
+    position: relative;
+}
+#x-resMenu > nav .dropdown ul > li {
+    padding: 0;
+    background-color: $mauxanh;
+}
+#x-resMenu > nav .dropdown ul > li:hover {
+    padding: 0;
+    background-color: lightblue;
+}
+#x-resMenu > nav .dropdown:after {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #000;
+}
+#x-resMenu > nav > ul > li > a{
+    padding:12px 14px;
+}
+// #x-resMenu > nav {
+//     position: relative;
+//     top: 45px;
+//         width: 100%;
+//     max-width: 100%;
+// }
+#x-resMenu > nav .dropdown:after{
+    transform: rotate(90deg);
+}
+#x-resMenu > .toggle {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    span{
+        color:#fff;
+    }
+}
+#x-resMenu > nav .dropdown.show > a {
+    background: lightblue;
+    display: block;
+}
+#x-resMenu > nav > ul > li >ul >li > a:hover{
+    background:lightblue;
+}
+#x-resMenu > nav .dropdown ul li{
+    padding-left: 0;
+}
+#x-resMenu > nav > ul > li > ul > li > a:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    margin-right: 11px;
+}
+
+
+
+
+ a.muangay{
+                                display: inline-block;
+                                padding: 12px 26px;
+                                background: #ebebeb;
+                                text-decoration: none;
+                                color: #333;
+                                font-size: 15px;
+                                border-radius: 999px;
+                                margin-bottom: 30px;
+                            &:hover{
+                                background:$mauxanh;
+                                color:#fff;
+                            }
+                        }
 
 //tool tang giam co chu
 .commonHeadTool {
@@ -126,6 +225,17 @@ $mauborder:#e1e1e1;
             }
         }
     }
+
+//coment fb
+.fb-comments_wrap{
+                 border:1px solid $mauborder;
+                 padding:40px 30px;}
+.cmt-fb{
+    color: $mauxanh;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'RB';
+}
  //khoi date-view dung chung 
  .date-view{
                          color:#999;
@@ -336,10 +446,6 @@ body{
     }
     }
    
-}
-.header .nav ul.menu li.dropdown:hover > ul {
-    opacity: 1;
-    visibility: visible;
 }
     // phan banner
 .banner{
@@ -1260,35 +1366,20 @@ footer{
 .mains .__1khoi .sanpham .list button.slick-next.slick-arrow{
     right:10px;
 }
- .navs{
-        background: $mauxanh;
-        height:45px;
-        position:relative;
-        
-    }
-#x-resMenu>nav>ul>li>a{
-        padding: 13px 20px;
-        font-size:15px;
-        text-transform:uppercase;
-        color:#fff;
-}
-#x-resMenu>nav>ul>li>a:hover{
-       background:#1a89c3;
-       color:#fff;
-}
-#x-resMenu>nav.visible {
-    position: absolute;
-    overflow: unset;
-    height: auto;
-    width: 100%;
-    min-width: 100%;
-    top: 45px;
-}
+
 .mains .__1khoi .sanpham .list .item{
     height:361px!important;
 }
 
 @media (max-width: 1365px) {
+
+    #x-resMenu > nav {
+    position: relative;
+    top: 45px;
+        width: 100%;
+    max-width: 100%;
+    }
+
     .khoiThongTinPhu{
         display:none;
     }
@@ -1319,20 +1410,6 @@ footer{
    .mains .__1khoi .sanpham .list .item .imgcw:before {
     padding-bottom: 76%;
     }
-   #x-resMenu > nav > ul > li > a {
-    color: #333;
-    font-weight: bold; }
-  #x-resMenu > .toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 45px; }
-    #x-resMenu > .toggle span {
-      background: #fff; }
-      #x-resMenu > .toggle span:after {
-        background: #fff; }
-      #x-resMenu > .toggle span:before {
-        background: #fff; } 
       .mains .__1khoi .sanpham .list button.slick-next.slick-arrow{
           right:10px;
       }
@@ -1344,61 +1421,25 @@ footer{
 }
 //responsive cho man hinhh dien thoai
 @media (max-width: 767px) {
-  * {
-    padding: 0; }
 
-.copyright .mail {
-    display: none;
-}
 
-.copyright .left {
-    width: 100%;
-}
-
-.copyright .right {
-    width: 100%;
-}
-
-.copyright .wrap-copyright {
+  .copyright .mail {
+    display: none; }
+  .copyright .left {
+    width: 100%; }
+  .copyright .right {
+    width: 100%; }
+  .copyright .wrap-copyright {
     flex-direction: column;
-    line-height: unset;
-}
-
-.mains .__1khoi .main-item__cap span {
-    display: none;
-}
-
-.mains .__1khoi .sanpham .list {
-    width: 100%;
-}
-
-.mains .__1khoi .sanpham .loaisp {
-    display: none;
-}
+    line-height: unset; }
+  .mains .__1khoi .main-item__cap span {
+    display: none; }
+  .mains .__1khoi .sanpham .list {
+    width: 100%; }
+  .mains .__1khoi .sanpham .loaisp {
+    display: none; }
   .header .nav ul.menu li a {
     color: #fff; }
-  .menu li:hover {
-    background: #007cbc;
-    color: #fff; }
-  .menu li:hover a {
-    color: #fff; }
-  .header .nav ul.menu li a {
-    color: #333;
-    width: 100%;
-    font-weight: bold;
-    display: inline-block;
-    padding: 0;
-    background: #e1f5ff;
-    padding-left: 20px; }
-  .header .nav ul.menu li a:hover {
-    background: #007cbc;
-    color: white; }
-  .header .nav ul.menu li a:after {
-    content: "\f107";
-    right: 25px;
-    top: 0;
-    font-family: FontAwesome;
-    position: absolute; }
   .main .main-item .main-item__product {
     border: 1px solid #e1e1e1; }
   .main .main-item .main-item__product .main-item__product--type {
@@ -1411,19 +1452,6 @@ footer{
   .main .main-item .main-item__cap span.caption:before {
     display: none;
     /* padding-left: 0; */ }
-  .menu li {
-    width: 100%;
-    height: 45px;
-    /* background: #e1f5ff; */
-    border-bottom: 1px solid #e1e1e1;
-    position: relative; }
-  .header .nav ul.menu {
-    flex-direction: column;
-    position: absolute;
-    z-index: 999;
-    top: 45px;
-    left: 0;
-    width: 100%; }
   .market {
     position: absolute;
     bottom: -75px;
@@ -1445,56 +1473,29 @@ footer{
     display: none; }
   .topHeader-l a:first-child {
     display: block; }
-  .header .nav ul.menu li.dropdown ul {
-    width: 100%;
-    position: static; }
-  #x-resMenu > nav > ul > li > a {
-    color: #333;
-    font-weight: bold; }
-  #x-resMenu > .toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 45px; }
-    #x-resMenu > .toggle span {
-      background: #fff; }
-      #x-resMenu > .toggle span:after {
-        background: #fff; }
-      #x-resMenu > .toggle span:before {
-        background: #fff; } 
-      .mains .__1khoi .sanpham .list .item {
-    border-left: 1px solid #e1e1e1;
-}
-      .banner .banner-wrap .imgcw:before {
-    padding-bottom: 70%;
-}
-      .mains .__1khoi .main-item__cap span.caption{
-          padding-left:0;
-      }
-      .mains .__1khoi .main-item__cap span.caption:before {
+  .mains .__1khoi .sanpham .list .item {
+    border-left: 1px solid #e1e1e1; }
+  .banner .banner-wrap .imgcw:before {
+    padding-bottom: 70%; }
+  .mains .__1khoi .main-item__cap span.caption {
+    padding-left: 0; }
+  .mains .__1khoi .main-item__cap span.caption:before {
     content: "";
-    display: none;
-}
-      .mains .__1khoi .main-item__cap span.caption{
-          width:50%!important;
-          min-width:100px;
-      }
-      footer .item p.caption {
-    margin-top: 30px;
-}
-      .information .khoiThongTin{
-          flex-direction:column;
-      }
-      .information .khoiThongTin .khoiThongTinPhu{
-          padding-left:0!important;
-      }
-      .copyright{
-          padding:10px 0;
-      }
-      .wrap-copyright{
-          flex-direction:column;
-          line-height:none;
-      }
+    display: none; }
+  .mains .__1khoi .main-item__cap span.caption {
+    width: 50% !important;
+    min-width: 100px; }
+  footer .item p.caption {
+    margin-top: 30px; }
+  .information .khoiThongTin {
+    flex-direction: column; }
+  .information .khoiThongTin .khoiThongTinPhu {
+    padding-left: 0 !important; }
+  .copyright {
+    padding: 10px 0; }
+  .wrap-copyright {
+    flex-direction: column;
+    line-height: none; }
 }
 
 

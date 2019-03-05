@@ -1,0 +1,284 @@
+﻿.modul-chitiet-sp{
+    display:flex;
+    .modul-chitiet-sp_img{
+        width:calc(50% - 20px);
+        margin-right:20px;
+        .img-big{
+            max-height:410px;
+            width:100%;
+            margin-bottom:5px;
+            border:1px solid $mauborder;
+        }
+        .wrap-thum{
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 0 -2px;
+           .thum-nho{
+               width: 20%;
+                padding: 0 2px;
+               .imgcw{
+                       border: 1px solid #e1e1e1;
+               }
+           }
+        }
+    }
+    .modul-chitiet-sp_info{
+        width:50%;
+        h3{}
+        p{
+            background-image:url('../css/images/tichv.png');
+            background-repeat:no-repeat;
+            padding-left: 40px;
+            background-position-y: center;
+            b{}
+        }
+        .mota{
+            border:1px dotted $mauxanh;
+            background:#dff4ff;
+            padding:20px;
+            border-radius:5px;
+            p{
+                background:none;
+                padding:0;
+                margin-top: 10px;
+				color: #333;
+				font-size: 16px;
+				font-family: 'RBr';
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    line-height: 25px;
+			    -webkit-line-clamp: 3;
+			    height: 75px;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+            }
+        }
+        .bot{
+            margin-top:30px;
+            display:flex;
+            .lienhe{
+                display:flex;
+           p{
+             background:none;
+             padding-left:0;
+             margin:0;
+                }
+            a{
+                text-decoration:none;
+                display:flex;
+                }
+            i{
+                margin-right: 20px;
+                margin-left: 40px;
+                background: red;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                border-radius: 100%;
+                color: #fff;
+                position:relative;
+                &:after{
+                    position:absolute;
+                    content:"";
+                    display:block;
+                    width:55px;
+                    height:55px;
+                    border:1px solid $mauborder;
+                    border-radius:100%;
+                }
+            }
+            .sdt{
+                p{color:#333;}
+                h4{color:red;
+                   font-weight:bold;
+                }
+            }
+            }
+        }
+        
+        
+    }
+}
+.tab-items {
+    width: 100%!important;
+    }
+.form-danhgia {
+    padding: 30px;
+    background: #f6f6f6;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.wrap-form {
+    display: flex;
+}
+.from-danhgia_input {
+    width: 50%;
+}
+.from-danhgia_input input {
+    width: 95%;
+    margin-bottom: 15px;
+    height: 42px;
+    padding-left: 10px;
+}
+.from-danhgia_text {
+    width: 50%;
+    text-align: right;
+}
+.from-danhgia_text textarea {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.from-danhgia_text a {
+    display: inline-block;
+    background: $mauxanh;
+    padding: 12px 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'RB';
+    color: #fff;
+    &:hover{
+        color:#fff;
+        opacity: .75;
+    }
+}
+.danhgia-items {
+    display: flex;
+}
+.danhgia-items .imgcw {
+    width: 15%;
+    height: 100%;
+    border-radius: 100%;
+}
+.danhgia-items .danhgia-desc {
+    width: calc(85% - 20px);
+    margin-left:20px;
+}
+#hinhanh{
+    text-align: center;
+}
+#hinhanh img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.slide-sanphamcungloai{
+    margin-top:40px;
+    h3{
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-family: 'RB';
+        color: #007cbc;
+        position: relative;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 21px;
+        margin-bottom: 40px;
+            &:before{
+                content: "";
+                display: block;
+                width: 100px;
+                height: 3px;
+                background: #007cbc;
+                position: absolute;
+                top: 48px;
+                left: 0;
+            }
+    }
+    .sp-wrap{
+        display:flex;
+        flex-wrap:wrap;
+        margin-bottom:40px;
+        border:1px solid $mauborder;
+        .item{      width:25%;
+                    height: 361px;
+                    text-align:center;
+                    border: 1px solid #e1e1e1;
+                &:hover{
+                    border:1px solid $mauxanh;
+                }
+                    .imgcw{
+                        &:before{
+                            padding-bottom: 88%;
+                        }
+                    }
+                    .info{
+                        padding:0 20px;
+                        p{
+                            font-size: 15px;
+                            color: #333;
+                        }
+                        a.muangay{
+                                display: inline-block;
+                                padding: 12px 26px;
+                                background: #ebebeb;
+                                text-decoration: none;
+                                color: #333;
+                                font-size: 15px;
+                                border-radius: 999px;
+                                margin-bottom: 30px;
+                                 text-transform:uppercase;
+                                 font-family:'RB';
+                            &:hover{
+                                background:$mauxanh;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+        .slick-dots {
+                position: absolute;
+                display: block;
+                top: -70px;
+                width: 100%;
+                height: 0;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+                z-index: 111;
+                right: -9px;
+                 }
+                 .slick-dots li {
+                    float: right;
+                }
+            .slick-dots li.slick-active button{
+                background:red;
+                 }
+    .slick-dots li button{
+        border:1px solid red;
+        border-radius:100%;
+        width:10px;
+        height:10px;
+        background:transparent;
+        &:hover{
+            background:red;
+            border: 1px solid transparent;
+            }
+        &:before{
+            content:"";
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
