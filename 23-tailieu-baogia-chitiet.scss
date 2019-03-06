@@ -1,0 +1,78 @@
+.modul-baogia{
+	  button.slick-next.slick-arrow {
+                   width: 30px;
+                    height: 30px;
+                    background: #007cbc;
+                    position: absolute;
+                    top: -35px;
+                    bottom: 0;
+                    border: 0;
+                    left: auto;
+                    right:0;
+                    z-index: 1;
+                    border-radius: 5px;
+                &:before{
+                    content: "\f105";
+                    font-family: FontAwesome;
+                    font-weight:bold;
+                   }
+                }
+                button.slick-prev.slick-arrow {
+                    width: 30px;
+                    height: 30px;
+                    background: #007cbc;
+                    position: absolute;
+                    top: -35px;
+                    bottom: 0;
+                    border: 0;
+                    left: auto;
+                    right:35px;
+                    z-index: 1;
+                    border-radius: 5px;
+                &:before{
+                    content: "\f104";
+                    font-family: FontAwesome;
+                    font-weight:bold;
+                   }
+                }
+	.bt-download{				margin-top: 20px;
+                                display: inline-block;
+                                padding: 12px 40px;
+                                background: $mauxanh;
+                                text-decoration: none;
+                                color:#fff;
+                                font-size: 15px;
+                                border-radius: 999px;
+                                margin-bottom: 30px;
+                            &:hover{
+                                opacity: .75;
+                            }		
+	}
+}
+@media (max-width: 1024px) {
+	*{padding:0;}
+	.modul-baogia .text img {
+    width: 100%;
+}
+.content .col_l {
+    width: 100%;
+}
+.spnoibat{
+	display: none;
+}
+.tinnoibat{
+	display: none;
+}
+.content .col_r {
+    width: 100%;
+    margin-left: unset;
+}
+
+}
+@media (max-width: 767px){
+	*{padding:0;}
+	.bangtailieu .items{
+		min-height: 45px;
+		flex-wrap: wrap;
+	}
+}

@@ -268,11 +268,18 @@
     }
 }
 
-
-
-
-
-
+@media (max-width: 767px){
+.modul-chitiet-sp {
+    flex-direction: column;
+}
+.modul-chitiet-sp .modul-chitiet-sp_img{
+    width: 100%;
+    margin-right: 0;
+}
+.modul-chitiet-sp .modul-chitiet-sp_info {
+    width: 100%;
+}
+}
 
 
 

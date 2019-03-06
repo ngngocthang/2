@@ -1,4 +1,6 @@
 .guilienhethanhcong{
+    font-size:15px;
+    font-family:'RBr';
 	text-align: center;
 	margin:auto;
 	width: 600px;
@@ -6,17 +8,27 @@
 		margin-bottom: 40px;
 	}
 	h4{
+        font-family:'RBr';
+        font-size:30px;
 		margin-bottom: 20px;
+        color:#333;
 	}
 	a{
 		display: inline-block;
 		margin-top: 20px;
 		padding:12px 34px;
 		text-decoration: none;
-		text-transform: uppercase;
 		color:#fff;
 		background: $mauxanh;
 		margin-bottom: 60px;
 		border-radius: 999px;
+        font-size:15px;
+        font-family:'RB';
 	}
+}
+@media (max-width: 1024px) {
+
+.guilienhethanhcong {
+    width: 100%;
+}
 }

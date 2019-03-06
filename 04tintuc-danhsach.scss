@@ -87,7 +87,17 @@
 
 	}
 }
-
+@media (max-width: 767px) {
+	.tintucsanpham .item .desc {
+    width: 100%;
+}
+.tintucsanpham .item .imgcw {
+    width: 100%;
+}
+.tintucsanpham .item{
+	flex-direction: column;
+}
+}
 
 
 

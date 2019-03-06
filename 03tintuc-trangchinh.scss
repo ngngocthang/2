@@ -141,10 +141,17 @@
 	}
 }
 
-
-
-
-
+@media (max-width: 767px){
+	.content .tinphu .tinphu-item {
+    flex-direction: column;
+	}
+	.content .tinphu .tinphu-item .imgcw {
+	    width: 100%;
+	}
+	.content .tinphu .tinphu-item .desc {
+    width: 100%;
+}
+}
 
 
 

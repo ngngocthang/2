@@ -1,0 +1,97 @@
+﻿
+.congtrinh-chitiet{
+    h3{
+            font-size:26px;
+            color:$mauxanh;
+            font-family: 'RB';
+        }
+    .text{
+        margin-bottom:30px;       
+    }
+    .slide-congtrinhkhac{
+        margin-top:40px;
+        .slide{
+            margin-left:-10px;
+            margin-right:-10px;
+               .slick-dots {
+                position: absolute;
+                display: block;
+                top: -70px;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+                z-index: 111;
+                right: -9px;
+                 }
+                 .slick-dots li {
+                    float: right;
+                }
+            .slick-dots li.slick-active button{
+                background:red;
+                 }
+    .slick-dots li button{
+        border:1px solid red;
+        border-radius:100%;
+        width:10px;
+        height:10px;
+        background:transparent;
+        &:hover{
+            background:red;
+            border: 1px solid transparent;
+            }
+        &:before{
+            content:"";
+            }
+        }
+        }
+         h3{
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-family: 'RB';
+        color: #007cbc;
+        position: relative;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 18px;
+        margin-bottom: 40px;
+            &:before{
+                content: "";
+                display: block;
+                width: 100px;
+                height: 3px;
+                background: #007cbc;
+                position: absolute;
+                top: 48px;
+                left: 0;
+            }
+    }
+        .items{
+            padding:0 10px;
+            margin-bottom: 20px;
+            .imgcw{
+                margin-bottom: 20px;
+                &:before{
+                padding-bottom: 66%;
+            }     
+            } 
+            a{
+            text-transform: uppercase;
+            color: #333;
+            font-size: 16px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-family: 'RB';
+        }
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+            font-family: 'RBr';
+        }
+        }
+    }
+}
+.congtrinh-chitiet .slide-congtrinhkhac .slide .slick-dots{
+    height: 10px;
+}

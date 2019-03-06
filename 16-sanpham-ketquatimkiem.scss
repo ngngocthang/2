@@ -1,0 +1,92 @@
+﻿.ketquatimkiem{
+    h3{
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-family: 'RB';
+        color: #333;
+        position: relative;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 21px;
+        margin-bottom: 40px;
+            &:before{
+                content: "";
+                display: block;
+                width: 100px;
+                height: 3px;
+                background: #007cbc;
+                position: absolute;
+                top: 48px;
+                left: 0;
+            }
+        span{
+            color:$mauxanh;
+        }
+    }
+    .sp-wrap{
+        display:flex;
+        flex-wrap:wrap;
+        margin-bottom:40px;
+        .item{      width:20%;
+                    height: 361px;
+                    text-align:center;
+                    border: 1px solid #e1e1e1;
+                &:hover{
+                    border:1px solid $mauxanh;
+                }
+                    .imgcw{
+                        &:before{
+                            padding-bottom: 88%;
+                        }
+                    }
+                    .info{
+                        padding:0 20px;
+                        p{
+                            font-size: 15px;
+                            color: #333;
+                        }
+                        a.muangay{
+                                display: inline-block;
+                                padding: 12px 26px;
+                                background: #ebebeb;
+                                text-decoration: none;
+                                color: #333;
+                                font-size: 15px;
+                                border-radius: 999px;
+                                margin-bottom: 30px;
+                                 text-transform:uppercase;
+                                 font-family:'RB';
+                            &:hover{
+                                background:$mauxanh;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+    }
+    .paging.SplitPages{
+        margin-bottom:60px;
+    }
+}
+@media (max-width:1024px){
+    .ketquatimkiem h3:before{
+        display: none;
+    }
+    .ketquatimkiem .sp-wrap .item{
+        width: 33.333%;
+        max-height: 361px;
+    }
+    .ketquatimkiem .sp-wrap .item .imgcw:before {
+    padding-bottom: 67%;
+}
+}
+
+@media (max-width: 767px){
+        .ketquatimkiem .sp-wrap .item{
+        width: 50%;
+        max-height: 361px;
+    }
+        .ketquatimkiem .sp-wrap .item .imgcw:before {
+    padding-bottom: 88%;
+}
+}

@@ -1,0 +1,92 @@
+﻿$mauxanh:#007cbc;
+$mauborder:#e1e1e1;
+
+
+// phan content 
+.content{
+    .col_r{
+        width:calc(100% - 321px);
+        float:left;
+        margin-bottom:60px;
+        margin-left:30px; 
+         .sub-content{ 
+             h3{
+                 font-size:30px;
+                 color:#333;
+                 margin-top:30px;
+                 margin-bottom:20px;
+             }  
+             .fb-comments_wrap{
+                 border:1px solid $mauborder;
+                 padding:40px 30px;
+             }    
+             .gt-khac{
+                 margin-left:-12px;
+                 margin-right:-12px;
+                .item-wrap{
+                    padding:0 12px;
+                     .item{ 
+                    display:flex;
+                     padding-bottom:25px;
+                     margin-bottom:25px;
+                     border-bottom:1px solid $mauborder;                                  
+                     .imgcw{
+                         width:35%;
+                         &:before{
+                             padding-bottom:66%;
+                         }
+                     }
+                     .decs{
+                         width:calc(65% - 15px);
+                         margin-left:15px;
+                         a{
+                             text-decoration:none;
+                             font-size:18px;
+                             color:#333;
+                         }
+                     }
+                  }
+                }
+                .slick-slide div:last-child .item-wrap .item {
+                    border-bottom: 0!important;
+                }
+                 button.slick-next.slick-arrow {
+                   width: 30px;
+                    height: 30px;
+                    background: #007cbc;
+                    position: absolute;
+                    top: -35px;
+                    bottom: 0;
+                    border: 0;
+                    left: auto;
+                    right:0;
+                    z-index: 1;
+                    border-radius: 5px;
+                &:before{
+                    content: "\f105";
+                    font-family: FontAwesome;
+                    font-weight:bold;
+                   }
+                }
+                button.slick-prev.slick-arrow {
+                    width: 30px;
+                    height: 30px;
+                    background: #007cbc;
+                    position: absolute;
+                    top: -35px;
+                    bottom: 0;
+                    border: 0;
+                    left: auto;
+                    right:35px;
+                    z-index: 1;
+                    border-radius: 5px;
+                &:before{
+                    content: "\f104";
+                    font-family: FontAwesome;
+                    font-weight:bold;
+                   }
+                }
+             }
+         } 
+    }
+}

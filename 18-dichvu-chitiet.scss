@@ -1,0 +1,82 @@
+﻿
+.modul-dichvu_chitiet{
+    h3{
+        font-size:24px;
+        font-family:'RB';
+    }
+}
+.form-register{
+    .wrap-register {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    background: #f6f6f6;
+    padding: 40px 20px;
+        .register {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0px;
+     p {
+    width: 50%;
+    padding: 0px 20px;
+    margin-bottom:0;
+    position:relative;
+    &.name::after{
+                content:"\f007";
+                font-family:FontAwesome;
+                color:$mauxanh;
+                position:absolute;
+                left:30px;
+                top:3px;
+
+            }
+    &.sdt::after{
+             content:"\f095";
+                font-family:FontAwesome;
+                color:$mauxanh;
+                position:absolute;
+                left:30px;
+         }
+    &.mail::after{
+             content:"\f0e0";
+                font-family:FontAwesome;
+                color:$mauxanh;
+                position:absolute;
+                left:30px;
+         }
+    &.location::after{
+             content:"\f041";
+                font-family:FontAwesome;
+                color:$mauxanh;
+                position:absolute;
+                left:30px;
+         }
+     &.area::after{
+             content:"\f040";
+                font-family:FontAwesome;
+                color:$mauxanh;
+                position:absolute;
+                left:30px;
+                top:0;
+         }
+     &.area{width:100%;}
+    }
+            input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left:40px;
+            }
+            textarea {
+    WIDTH: 100%;
+    padding-left:40px;
+            }          
+        }
+    }
+}
+@media (max-width: 1024px) {
+.form-register .wrap-register .register p {
+    width: 100%;
+}
+.form-register .wrap-register .register {
+    flex-direction: column;
+}    
+}
